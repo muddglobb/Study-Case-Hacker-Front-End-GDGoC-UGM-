@@ -1,4 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
+    font-family: 'moontserrat';
     margin: 0;
     background-color: #FAFAFA;
 }
@@ -177,6 +181,7 @@ header{
     margin: 0;
     cursor: pointer;
     opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .carousel-thumbnails .active {
@@ -344,6 +349,65 @@ header{
     gap: 5px;
 }
 
+/* tablet landscape*/
+@media screen and (max-width: 1024px){
+    .header-top{
+        padding: 7px 60px 0 0;
+        gap: 10px;
+    }
+    .call-us{
+        gap: 2px;
+        padding-left: 0;
+    }
+    .contact-us{
+        gap: 5px;
+    }
+    .chance-to-win{
+        padding: 0;
+    }
+    .header-bottom{
+        padding: 0 60px 0 54px;
+    }
+    .navigation{
+        gap: 50px;
+    }
+    .nav-list{
+        gap: 7px;
+    }
+    .upper-main{
+        margin: 12px 60px 12px 54px;
+    }
+    .first-content{
+        margin: 12px 60px 12px 54px;
+    }
+    .best-seller{
+        margin: 12px 60px 12px 54px;
+    }
+}
+
+
+@media screen and (max-width: 835px){
+    .header-top{
+        padding: 7px 20px 0 0;
+    }
+    .contact-us{
+        margin-left: 20px;
+    }
+    .header-bottom{
+        padding: 0 20px 0 20px;
+    }
+    .upper-main{
+        margin: 9px 39px 9px 39px;
+    }
+    .first-content{
+        margin: 9px 39px 9px 39px;
+    }
+    .best-seller{
+        margin: 9px 39px 9px 39px;
+    }
+}
+
+/* smartphone */
 @media screen and (max-width: 430px){
     .nav-list{
         font-weight: 400;
